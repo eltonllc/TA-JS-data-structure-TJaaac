@@ -44,6 +44,6 @@ for (let i of colors) {
 // 19. Create a variable named lastColor that will always point to the last element of the colors array, no matter how many colors are in the list. (Hint: make use of the array's length property for this!)
 let lastColor = colors[colors.length - 1];
 // 20. Add a new color `tomato` to the index 45. And check the length of the array. Use `console.log` to print.
-colors[45] = "crimson";
+colors[45] = "tomato";
 
 console.log(colors.length);
