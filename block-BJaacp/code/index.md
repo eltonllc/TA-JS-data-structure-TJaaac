@@ -11,15 +11,15 @@ let arr2 = arr;
 
 Answer the following with reason after going through the above code:
 
-- `[10] === [10]`
-- What is the value of obj? // answer
-- `obj == newObj`
-- `obj === newObj`
-- `user === newObj`
-- `user == newObj`
-- `user == obj`
-- `arr == arr2`
-- `arr === arr2`
+- `[10] === [10]`//false because they have different memory location
+- What is the value of obj? // { name: 'Arya' }
+- `obj == newObj`// false. Theyre stored in differnt memory blocks
+- `obj === newObj`// same as above because no type conversions
+- `user === newObj`// false because theyre both stored in different memory blocks
+- `user == newObj`// same as above . No type conversions
+- `user == obj`//true because its pointing from the same reference
+- `arr == arr2`//true because of the same reference point
+- `arr === arr2`//same as above, no type conversions
 
 2. What's will be the value of `person1` and `person2` ? Explain with reason. Draw the memory representation diagram.
 
@@ -46,6 +46,6 @@ var user = {
 };
 user.brothers = brothers;
 brothers.push('Robb');
-console.log(user.brothers === brothers); //1. output
-console.log(user.brothers.length === brothers.length); //2. output
+console.log(user.brothers === brothers); //1. true
+console.log(user.brothers.length === brothers.length); //2. true
 ```
