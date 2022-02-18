@@ -107,7 +107,7 @@ console.log(revert(['Ryan', 'John', 'Bran'])); //['Bran', 'John', 'Ryan']
 function clear(array) {
   let arr = [];
   for (let element of array) {
-    if (Boolean(element) === true) arr.unshift(element);
+    if (Boolean(element) === true) arr.push(element);
   }
   return arr;
 }
